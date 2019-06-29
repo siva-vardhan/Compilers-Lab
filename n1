@@ -1,0 +1,43 @@
+type
+List
+{
+int data;
+List next;
+}
+endtype
+decl
+List head;
+enddecl
+
+int main()
+{
+decl
+
+int x,y;
+List q,p;
+enddecl
+begin
+x=initialize();
+p=alloc();
+q=alloc();
+p.data=33;
+q.data=44;
+p.next=q;
+q.next=null;
+head=p;
+q=head;
+
+
+
+
+q=head;
+x=q.data;
+write(x);
+q=q.next;
+x=q.data;
+write(x);
+
+
+
+end
+}

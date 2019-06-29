@@ -1,0 +1,22 @@
+begin
+decl
+  int num, sum,s[10];
+  str mesg,si[15];
+  int n1,i;
+enddecl
+mesg="Hii how are you";
+i=0;
+write(mesg);
+write("Enter 10 Numbers");
+while(i<10) do
+read(s[i]);
+s[i]=s[i]+s[i-1];
+i=i+1;
+endwhile;
+read(n1);
+i=0;
+while(i<10) do
+write(s[i]);
+i=i+1;
+endwhile;
+end;

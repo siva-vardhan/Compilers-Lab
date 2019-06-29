@@ -1,0 +1,31 @@
+decl
+   int f(int x,int y);
+enddecl
+int f(int x,int y){
+    decl
+    enddecl
+	begin 
+	   if(x==0) then
+	      return y;
+	   else 
+	      if(y==0) then
+	        return x;
+	      else
+	        return f(f(x-1,y),0)+1;
+	      endif;
+	   endif;
+	   return 0;
+	end
+}
+
+int main(){
+	decl
+	  int a,b;
+	enddecl
+	begin
+      read(a);
+      read(b);
+      write(f(a,b));
+
+    end
+}

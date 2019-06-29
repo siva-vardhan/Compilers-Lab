@@ -1,0 +1,15 @@
+begin
+a=1;
+b=1;
+while(a<=5) do
+b=1;
+while(b<=5) do
+write(a*10+b);
+b=b+1;
+endwhile;
+a=a+1;
+if(a==4) then
+break;
+endif;
+endwhile;
+end;

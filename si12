@@ -1,0 +1,84 @@
+type
+endtype
+
+decl 
+int a,b,c,d;
+int factorial(int n);
+enddecl
+
+
+
+int factorial(int n){
+ decl 
+  int f; 
+ enddecl 
+ begin
+  if( n==1 ) then
+f=1;
+else
+if( n==0 ) then
+   f = 1;
+  else
+   f = n * factorial(n-1); 
+  endif;
+endif;
+ return f;
+ end
+}
+
+int main()
+{
+decl
+enddecl
+begin
+read(a);
+a=factorial(a);
+write(a);
+end
+}
+
+
+
+printf("HOWLE");
+			if($1->Lentry!=NULL) {
+	printf("SSIIVVAA");
+
+				$1->type=$1->Lentry->type;
+				$$->type=FLookup($1->type->fields,$3->varname);
+				}
+			else if($1->Gentry!=NULL){
+	printf("SSSSSSSSIIIIIIIIVVVVVVVVVVVAAAAAAAAAAAAA");
+				$1->type=$1->Gentry->type;
+				$$->type=FLookup($1->type->fields,$3->varname);
+				}
+			else
+				{printf("%s not declared\n",$1->varname);
+				exit(1);}
+	printf("Svia");
+	exit(1);
+				//print_gtab(head);
+	print_ltab(l1);
+				//										exit(1);
+			//$1->type=$1->Gentry->type;
+			
+	print_gtab($$->Gentry);
+	printf("HOE");
+	print_gtab($1->Gentry);
+	printf("HOWLE");
+	print_ltab($1->Lentry);
+	printf("SSSSSSSSSSSS");
+		if($1->Lentry!=NULL)
+			{
+			printf("Name : %s Type : %s 	Binding : %d \n",$1->Lentry->name,$1->Lentry->type->name,$1->Lentry->binding);
+			print_f($1->Lentry->type->fields);
+struct Typetable *t1=$1->Lentry->type;
+			print_f(t1->fields);}
+		printf("DONT FEEL");
+			//print_ltab($$->Lentry);
+			//printf("\nSIVA %s=%s siva\n",$1->varname,$1->type);
+
+
+
+
+			printf("\nS1S1\n");
+			prefix($$);

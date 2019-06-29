@@ -1,0 +1,31 @@
+decl
+int fib(int n);
+enddecl
+int fib(int n)
+{
+decl
+enddecl
+begin
+if(n==1) then
+	return 1;
+else
+if(n==2) then
+	return 1;
+else
+	return fib(n-1)+fib(n-2);
+endif;
+endif;
+end
+}
+
+int main()
+{
+decl
+int a,b;
+enddecl
+begin
+read(a);
+b=fib(a);
+write(b);
+end
+}

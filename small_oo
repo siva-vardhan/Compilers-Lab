@@ -1,0 +1,55 @@
+type
+endtype
+
+class
+A{
+decl
+int f0();
+int f1();
+enddecl
+int f0(){
+decl
+int p;
+enddecl
+begin
+write("IN A f0");
+end
+}
+int f1()
+{
+decl
+enddecl
+begin
+write("IN A f1");
+end
+}
+}
+B{
+decl
+int f0();
+
+enddecl
+int f0()
+{
+decl
+enddecl
+begin
+write("IN B f0");
+end
+}
+}
+endclass
+decl
+A obj;
+enddecl
+int main(){
+decl
+int x,n;
+enddecl
+begin
+x=initialize();
+obj=new(A);
+read(n);
+write(obj.f0());
+end
+}

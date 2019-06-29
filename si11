@@ -1,0 +1,9 @@
+begin
+decl
+
+int i,j;
+enddecl
+i=5;
+read(i+j);
+write(i+j);
+end;
